@@ -9,9 +9,229 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.home .container {
+  position: relative;
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: auto;
+  place-content: start;
+
+}
+
+.home {
+  display: flex;
+  justify-content: flex-start;
+
+  color: whitesmoke;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 60%, rgba(70, 66, 66, 0.367)), url('statics/home3.jpg');
+  width: 100vw;
+  height: 25rem;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+
+
+}
+
+.Card {
+  width: 30vw;
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+
+  height: 16rem;
+  border-radius: 12px;
+  border: 1px rgba(245, 167, 41, 0.651) solid;
+}
+
+.discover-container {
+  background-image: radial-gradient(rgba(32, 72, 32, 0.794) 60%, rgba(255, 255, 255, 0.823));
+}
+
+.discover-image {
+
+  bottom: 0;
+
+}
+
+p span {
+  text-decoration: underline;
+}
+
+.treatement {
+  background-image: url('./statics/treat.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.herbs-picture {
+  background-image: url('./statics/herbs1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: 100%;
+}
+
+.herbs-picture2 {
+  background-image: url('./statics/herbs2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: 100%;
+}
+
+/* mobile screen */
+@media (max-width :580px) {
+  .navBar {
+    display: block;
+    background-color: rgb(255, 253, 240);
+    width: 100vw;
+  }
+
+  .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    height: 3rem;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+  }
+
+  .discription {
+    border-bottom: 2px solid rgba(186, 140, 100, 0.19);
+    padding: 0.5rem;
+  }
+
+  .testimony-container .part1,
+  .testimony-container .part2 {
+
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+
+
+  }
+
+  .testimony-container .part1 div,
+  .testimony-container .part2 div {
+    height: 14rem;
+    width: 90vw;
+    box-shadow: 0px 5px 5px 0px rgb(21, 128, 61);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.bookings {
+
+  background-image: linear-gradient(45deg, rgba(34, 32, 32, 0.546) 60%, rgba(34, 32, 32, 0.106)), url('./statics/herbs-bg.jpg');
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+
+  width: 100vw;
+  height: 14rem;
+}
+
+.courosel-effect {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+}
+
+.web-review {
+  width: 100vw;
+  margin-top: 2rem;
+}
+
+.review-cards {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0)90%, rgba(35, 34, 34, 0.645)10%);
+}
+
+
+.doctor {
+  background-image: linear-gradient(180deg, rgba(254, 215, 170, 0.992)90%, rgba(0, 0, 0, 0.615)10%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.dr-image {
+  width: 3rem;
+
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.the-app-home {}
+
+/* bigger screens */
+@media (min-width :580px) {
+  .discription {
+    border-right: 2px solid rgba(186, 140, 100, 0.19);
+    padding: 0.5rem;
+  }
+
+  .navBar {
+    display: none;
+
+  }
+
+  .testimony {
+    width: 100%;
+    height: 22.5rem;
+  }
+
+  .testimony .part1 {
+
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .part1 div {
+    box-shadow: 5px 0 5px 5px rgb(21, 128, 61);
+
+    background-color: white;
+    margin: 10px;
+    border-radius: 12px;
+    height: 10rem;
+  }
+
+  .part2 div {
+    box-shadow: 5px 0 5px 5px rgb(21, 128, 61);
+
+    background-color: white;
+    margin: 10px;
+    border-radius: 12px;
+    height: 10rem;
+  }
+
+  .testimony .part2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
