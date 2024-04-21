@@ -45,7 +45,7 @@ code {
 }
 
 .Card {
-  width: 30vw;
+  width: 40vw;
   display: grid;
   grid-template-columns: auto;
   place-items: center;
